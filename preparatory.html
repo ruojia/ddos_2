@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
+    <title>DDOS Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <style id="holderjs-style" type="text/css"></style>
+    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body style="">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">DDOS Guide</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">DDOS Guide</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li class="active" class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="preparatory.html#p1">Hosting Location</a></li>
+                    <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
+                    <li><a href="preparatory.html#p5">Mirrors</a></li>
+                    <li><a href="preparatory.html#p8">Providers</a></li>
+                    <li><a href="preparatory.html#p9">Distributed Content</a></li>
+                    <li><a href="preparatory.html#p10">Darknets</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
+                    <li><a href="responding.html#p2">Initial Phase</a></li>
+                    <li><a href="responding.html#p10">Restorative Phase</a></li>
+                    <li><a href="responding.html#p15">Long Term Phase</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Response Process Flowchart</li>
+                    <li><a href="server.html">Server Side</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="provider.html">Provider</a></li>
+                    <li><a href="hand.html">Hand</a></li>
+                  </ul>
+                </li>
+                <li><a href="hottips.html">Hot Tips</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Preparatory Phase</h1>
+        <p>Most DoS mitigation strategies are best implemented well ahead of time. Some strategies, such as the various types of site mirroring, are implemented as the normal operating procedure whether the site is under attack or not. These strategies are architectures for your website that are good for reach and performance, as well as for resilience to DoS attacks. Other strategies are organized and lie dormant, waiting to be activated if the site comes under DoS attack. Darknets are certainly in that category, and the use of Distributed Content as a mitigation strategy (rather than a strategy for reach) is as well.</p>
+        <p><a href="#p1" class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p1">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/9.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4>Hosting Location</h4>
+            <p>The capabilities, geographic location, and the appetite to tolerate attacks by your website hosting provider where you choose to have your website hosted may be a significant factor in the ability your opponents have in affecting your site. Therefore, it is advised you take careful consideration in choosing the hosting locationprovider or providers of your website wellcarefully in advance.</p>
+            <p>Denial of Service attacks are effective by exhausting your resources, so it is wise to ask yourself how much resources could you commit to an attack before you got to the point of resource exhaustion brought your site to a standstill. Think of all the resources involved including (but not limited to) hardware and software application limits, network and bandwidth limits, engineering and technician time, and financial costs.</p>
+            <p>Ask questions of your potential providers: how much bandwidth is dedicated to your site? How much bandwidth could be consumed by an attack, and how many days would the provider tolerate an attack before refusing to host your site? Is your site able to be moved out of a shared virtual environment and onto a dedicated server if it comes under attack (to protect other customer's websites from being affected by the attack against your site)? What Denial of Service Protections do they have in place and/or offer to customers?</p>
+            <p>This is also true of the provider hosting the DNS for your site. Ask them how many DNS requests per second they would tolerate before refusing to respond toX name service requests.</p>
+            <p>Aready know about Hosting Location? <a href="#p4">Jump to Third Party DOSP.</a></p> 
+            <p>Wanna know more about Hosting Location? <a href="#p2"> Go to International Hosting Location Strategy.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p2">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        </div>
+        <div class="col-md-7">
+           <h4>International Hosting Location Strategy</h4>
+              <p>If you oppose the government or are highly critical of other sectors within your country, then it is probably not a good idea to host your website within the geographic borders of your country. Some political opposition groups have come under DDoS attack, and when they asked their service provider to assist in mitigating the attacks, they received no assistance whatsoever. It is believed the service providers were under pressure from the government to withhold any assistance to the website owners. It must also be noted that if the government has control of traffic at key points of the internet infrastructure within the borders of the nation, then it may be possible for them to outright block access to, divert traffic away from, or choke down the bandwidth to your website, creating a very effective denial of service to some visitors to your website (depending on what infrastructure the government has control of, where it is located, where your users are located, etc.).</p>
+              <p>Another issue to consider in relation to geographic location of your hosting provider is the question of legal jurisdiction. If you host your website within the nation or in a nation with very close ties to the government, you may provide them with an easy avenue to find or create laws to shut down your site. The solution to these issues is to host your website overseasinternationally, away from the infrastructu</p>
+              <p>Next: <a href="#p3"> Local Hosting Location Strategy.</a></p> 
+              <p>Jump to: <a href="#p4"> International Hosting Location Strategy.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p3">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/23.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Local Hosting Location Strategy</h4>
+            <p>There may be good reason not to implement the OverseasInternational Hosting Strategy (as per above), so careful consideration should be given to the best solution that meets your specific situation. If your website audience is entirely local to your country, and there is enough incentive for the authorities to hold back from blatant censorship of your website, then it may be a better strategy against DDoS attacks to host your site within the borders of your country. If your opponents engage the services of a botnet on the black market to attack your website, it is highly likely that the majority of the zombie nodes that make up that botnet will be located outside of the Top Level Domain (TLD) namespace of your country. It is therefore possible to go some way to mitigating a DDoS attack by simply dropping all traffic at an upstream firewall that originates from computers not located locallywithin your country. This leaves your website available for your local target audience. To differentiate between national and international connections geolocation will need to be done either at the firewall or a forward proxy. Some firewalls and proxies will come with this functionality out of the box and rules can be written for others to achieve this capability. Note also that the effectiveness of this strategy may be limited if the attack utilizes spoofed source addresses.</p>
+            <p>Back to: <a href="#p2"> International Hosting Location Strategy.</a></p>
+            <p>Go to: <a href="#p4"> Third Party Denial of Service Protection (DoSP). </a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p4">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4>Third Party Denial of Service Protection (DoSP)</h4>
+            <p>When choosing a hosting service provider, take into careful consideration any offerings they may have for the provision of Denial of Service Protection (DoSP). DoSP can take many forms, but usually the most cost-effective options will be organized by your hosting provider, so choose carefully. at the hosting provider level. Some basic DoSP options are guarantees made about short-term increases in the provision of bandwidth to your site to cope with rate-based denial of service attacks. At the other end of the scale are Gglobal providers who specialize in this area and have agreements with most of the world's large Telcos may provide stronger DoSP, as these agreements may allow them the ability to 'clean' incoming traffic or stop attacks closer to their source rather than waiting until the attack traffic reaches the network where your website is hosted. DoSP cleaning of the traffic destined for your site can be done at your hosting location, or with the traffic re-routed to a traffic cleaning centre by re-routing your traffic with altered BGP routes or use of reverse proxy and DNS re-announce. Arbor Networks provides this kind of service (http://www.arbornetworks.com/). There are also DoSP 'middlemen': companies that offer DoSP services from a number of higher-level DoSP providers bundled together as a single service, which is then offered to a large number of clients. These middlemen often are able to provide the best DoS protection at a very reasonable price. DOSarrest is one example of asuch middleman DoSP provider (http://www.dosarrest.com/).</p>
+            <p>Next: <a href="#p5"> Preparing Mirrors. </a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p5">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/13.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4>Preparing Mirrors</h4>
+            <p>The aim of website mirroring is to distribute content across multiple service providers, multiple geographic locations, and multiple allocations of bandwidth, so that the website content has some resilience to disruptive events, whether from localized natural or political events or malicious activity. Building the website so it can be bundled, moved, installed, and reinstalled easily is a great strategy for preparing to mitigate DoS attacks through establishing mirror sites. In order to put your website together like this, you will need to take into consideration the technologies used to build and run your site. Answering the following questions will assist in preparing a site for mirroring:</p>
+            <ol>
+              <li>Will the technologies run on differently configured platforms?</li>
+              <li>What software dependencies are there?</li>
+              <li>Can all those dependencies be isolated and bundled with the website content?</li>
+              <li>If the site is data-driven, are you able to bundle that data into the same package?</li>
+              <li>Will the site run with snapshots of the data, or is the data so real-time that it cannot be pre-bundled (even if on a nightly basis or similar)?</li>
+            </ol>
+            <p>Another challenge with preparing for mirroring is finding a way to test mirror creation under the kinds of circumstances that would be experienced in the heat of an ongoing DoS attack. Ideally, a site administrator would have accounts with multiple hosting providers (for the purpose of hosting mirrors when required), and these accounts would be used to test the ability of the site's tech team to deploy, install, and verify the installation of an instance of the site onto the test server. In this way, issues could be ironed out before the procedure has to be done under the more extreme circumstances of a real attack. This test process should not be performed once and then forgotten about. It should be a regularly scheduled event, as the environment, the components that make up the website, and the data that sits behind it all change frequently.</p>
+            <p>Aready know about Mirrors? <a href="#p8">Jump to Big Bandwidth Providers.</a></p> 
+            <p>Wanna know more about Mirrors? <a href="#p6"> Go to Load Balanced Mirrors.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p6">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Load Balanced Mirrors</h4>
+            <p>Load balanced mirroring is possible by re-delegating the DNS for the website domain to point to a device that distributes incoming requests across a number of mirrored instances of the website. Ideally, these instances of the website should be distributed to different hosting providers located in different geographic locations. Load balanced mirroring of a website can be set up in preparation of possible DoS attacks, but due to the additional complexity of setting up the load balancer and the expense of paying multiple service providers to host multiple instances of the website, this is often avoided until an active DoS event is initiated. To be able to use this type of mirroring, the credentials and information necessary to modify the DNS records for the domain are required. So is the ability to either host a load balancer technology with administrative rights, or to add configuration to a load balancing device that is provided as part of a service by one of the hosting providers. Examples of such load balancing devices include a whole range of options, from simple, cheap and open source reverse caching proxies (Nginx, Lighttpd, Varnish etc which run on a variety of operating systems such as Linux, BSD, and Microsoft), to proprietary, commercial and expensive load-balancing solutions (F5 routers, etc).</p>
+            <p>Back to: <a href="#p5"> Preparing Mirrors.</a></p>
+            <p>Go to: <a href="#p7"> Open Provider Mirrors. </a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p7">
+        <div class="col-md-1"></div>        
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Open Provider Mirrors</h4>
+            <p>One factor that makes Open Provider mirroring so popular amongst Civil Society site owners is that the services offered by the open providers are usually free or low-cost. An open provider mirror for a website is essentially a content publishing framework provided as a service, such as Wordpress or Facebook. These providers are good for defending against DoS because they have access to truly massive amounts of total bandwidth resources, which they seem happy to use liberally when an account in their system comes under significant rate-based DoS attack. The disadvantage is that these frameworks were designed to lower the barrier for average people to publish content, and therefore they provide fairly generic and limited scope for the design and the delivery of dynamic content. The aim of using an open provider mirror is to host the most critical content of your original site elsewhere in a more static form. In preparation for this type of mitigation before an event occurs, the architects of the site can think about ways to automate the process of generating and keeping static versions of critical site content. They can also maintain accounts on these open mirror providers for publishing content or interacting with users, even though no DoS attack is in progress.</p>
+            <p>Back to: <a href="#p6"> Load Balanced Mirrors.</a></p>
+            <p>Go to: <a href="#p8"> Big Bandwidth Providers. </a></p>      
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p8">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4>Big Bandwidth Providers</h4>
+            <p>There is another type of big bandwidth provider out there that can be utilized for DoS mitigation. These big bandwidth providers are cloud service providers, such as Amazon and Rackspace. These services are not free and, in the long term, not even necessarily cheap, but they do have gigantic computing and networking resources at their disposal to ensure their clients' content is kept available to their consumers as much as possible. From an architectural and technical point of view, the main consideration of using big bandwidth providers for DoS mitigation is ensuring that the chosen cloud provider/s offer the technical environment necessary to install and run a packaged version of your website.</p>
+            <p>Next: <a href="#p9"> Distributed Content.</a></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="p9">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4>Distributed Content</h4>
+            <p>This form of DoS mitigation looks at formatting content in such a way that it is easily consumable via many different protocols and in many different modes of presentation. It is important to adopt the MVC (Model, View, Controller) methodology, which separates the data, the processing of data, and the presentation of data into three very independent functions. In the context of DoS mitigation, this allows the data to always be available for distribution through different media, which helps ensure it is always available. Implementing this mitigation strategy involves designing your website to produce a version of your core content that is distributable via protocols such as RSS. In advance, you will need to organize channels that embed your content into other allied websites. This gives you the ability to make the content of your site available to your users via those other sites if your own site is unavailable due to DoS attack. The standardization and simplicity of protocols like RSS make it possible for other site owners to quickly set up publishing channels for your content.</p>
+            <p>Next: <a href="#p10"> Darknets.</a></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="p10">
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-8">
+          <h4> Darknets</h4>
+            <p>Unlike other strategies, which can be enacted after the DoS has begun, 'darknets' will only work if set up as a preparatory denial of service protection measure. To set up a darknet, you must first purchase a range of IP addresses—for example, 165.237.62.100-105. You allocate 100, 101, 102, 104, and 105 to instances of web servers serving your website and put this array of IP addresses into the configuration of your load balancer. Since 103 is not allocated, it is left as a darknet. An attacker will see from DNS queries (etc.) that you have a range of IP addresses allocated to you, and that your website is distributed across the range. When they set up their attack, they may configure it to attack that same range of IP addresses rather than setting the target as the common name or URL for your website (such as 'yoursite.org'). Unknown to the attacker, the range contains a darknet, and when they initiate their attack, you will be able to monitor the machine associated with the 103 address. Any traffic you see hitting that address is malicious traffic. This allows you to take any client IP addresses hitting that server and add them (perhaps even using an automated mechanism) to an upstream firewall. This reduces the number of attacker client IP addresses that get through, leaving more of your web server resources available to serve content to the IP addresses of your real users.</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      
+        <p>Wanna know more about DDOS?<a href="responding.html"> Go to Responding to a DoS Attack. </a></p>
+        <p>Wanna to follow a flowchart for an examine? <a href="#"> Go to Response Process Flowchart.</a></p>
+        <p><a href="index.tml">Back to homepage</a></p>
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
+  
+<!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+  </body>
+</html>

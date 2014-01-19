@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
+    <title>DDOS Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <style id="holderjs-style" type="text/css"></style>
+    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body style="">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">DDOS Guide</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">DDOS Guide</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="preparatory.html#p1">Hosting Location</a></li>
+                    <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
+                    <li><a href="preparatory.html#p5">Mirrors</a></li>
+                    <li><a href="preparatory.html#p8">Providers</a></li>
+                    <li><a href="preparatory.html#p9">Distributed Content</a></li>
+                    <li><a href="preparatory.html#p10">Darknets</a></li>
+                  </ul>
+                </li>
+                <li class="active" class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
+                    <li><a href="responding.html#p2">Initial Phase</a></li>
+                    <li><a href="responding.html#p10">Restorative Phase</a></li>
+                    <li><a href="responding.html#p15">Long Term Phase</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Response Process Flowchart</li>
+                    <li><a href="server.html">Server Side</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="provider.html">Provider</a></li>
+                    <li><a href="hand.html">Hand</a></li>
+                  </ul>
+                </li>
+                <li><a href="hottips.html">Hot Tips</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Responding to a DoS Attack</h1>
+        <p>DoS attacks are stressful. They are stressful for the site visitors who are not able to get to the site content. They are stressful for the staff of the organization, who know their message is not reaching their audience. And they are stressful for the technical staff tasked with keeping the website operational. With this in mind, we have devised this simple to follow step-by-step process that will assist in keeping your technical staff efficiently focused on getting the website available to your audience again.</p>
+        <p><a href="#p1" class="btn btn-primary btn-lg" role="button">Learn more »</a></p>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p1">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <h4>Phases for Denial of Service Attack Mitigation</h4>
+            <p>For a website under a denial of service attack, it is useful to focus the mitigation of the attack into three phases of getting the site back online. These phases are the Initial Phase, the Restorative Phase, and the Long Term Phase. Note that regardless of DoS mitigation phase, one key thing to remember is that it is in the best interests of all your upstream providers to work with you to mitigate the DoS attack. If you are under a rate-based attack, it will be affecting their bandwidth, and may be affecting not just your website but also the sites and networks of other customers as well. Therefore, it is in everyone's best interest to communicate and work together collaboratively. Let your upstream providers know this. Let them know you want to work with them to resolve the issue. Talk to your provider first. Then get them to talk to their provider.</p>
+            <p>Next: <a href="#p3"> Initial Phase.</a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/9.jpg" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p2">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+           <h4>Initial Phase</h4>
+              <p>If you oppose the government or are highly critical of other sectors within your country, then it is probably not a good idea to host your website within the geographic borders of your country. Some political opposition groups have come under DDoS attack, and when they asked their service provider to assist in mitigating the attacks, they received no assistance whatsoever. It is believed the service providers were under pressure from the government to withhold any assistance to the website owners. It must also be noted that if the government has control of traffic at key points of the internet infrastructure within the borders of the nation, then it may be possible for them to outright block access to, divert traffic away from, or choke down the bandwidth to your website, creating a very effective denial of service to some visitors to your website (depending on what infrastructure the government has control of, where it is located, where your users are located, etc.).</p>
+              <p>Another issue to consider in relation to geographic location of your hosting provider is the question of legal jurisdiction. If you host your website within the nation or in a nation with very close ties to the government, you may provide them with an easy avenue to find or create laws to shut down your site. The solution to these issues is to host your website overseasinternationally, away from the infrastructu</p>
+              <p>Aready know about Initial Phase? <a href="#p10">Jump to Restorative Phase.</a></p> 
+              <p>Wanna know more about Initial Phase? <a href="#p3"> Go to Initial Phase Strategies.</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p3">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h4>Initial Phase Strategies for Mitigating Denial of Service Attacks:</h4>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p4">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Third Party Denial of Service Protection (DoSP)</h4>
+            <p>If DoSP has not been organized beforehand and you find yourself under attack, ask your hosting service provider if they are able to offer any DoSP. If the answer is no, then go to their upstream provider and ask the same question. It may be that a bigger provider upstream has the ability to utilize a DoSP service. The bigger or more 'wholesale' the service provider, the more likely they are to have an agreement to work with a DoSP service. If this turns out to be the case, then you may be able to negotiate with them to clean the traffic destined for your website before it even gets to the network of your service provider. </p>
+            <p>Next: <a href="#p5"> Firewalling. </a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p5">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Firewalling</h4>
+            <p>In the mitigation of DoS attacks, we should not discount the usefulness of even a basic firewall. While in some sense it is too late if the volume of a rate-based DoS attack is reaching a device just before your web site, there may be some usefulness here. If the firewall can be configured to drop as much of the malicious traffic as possible, then at least the web server itself may get some of its processing power back, which means that legitimate requests that do get through may actually be able to be served responses. The legitimate incoming and outgoing traffic will still have to fight for bandwidth with attack traffic, but at least you may be able to reduce the number of variables in the equation that are affected by the attack.</p>
+            <p>The ability to firewall comes down to being able to identify the malicious traffic from the rest of the traffic. There may be certain circumstances in how the attack has been constructed that will help you, or you may be able to utilize tactics such as the use of a darknet (see above) to take an active role in sorting the malicious traffic from the legitimate traffic. If doing a traffic analysis reveals that attack traffic is coming predominantly from a single or small number of countries based on geolocation of the source IP addresses, then all traffic from those countries may be blocked at the firewall if the firewall supports blocking on IP geolocation. This is a fairly harsh measure and will likely also cause some collateral damage, but in the early stages of mitigation, this may be warranted.</p>
+            <p>If your website is locally hosted within your nation and your audience is almost entirely within the same country, then another drastic measure is to block all traffic coming from any IP geolocated outside the local country. This can be an effective short-term response to a DDoS attack, as the 'zombie' computers that make up the botnet are likely to be widely distributed around the world, not centered in your local nation. By blocking all but local traffic, particularly if it can be done upstream, the majority of your audience who is local will still be able to get to your content, while most of the attack traffic will not.</p>            
+            <p>When thinking of utilizing firewalling as a DoS mitigation tactic, remember that the further upstream the firewalling can be done, the more effective it will likely be in helping your situation. This means talking to your service provider as well as your service provider's upstream provider.</p>
+            <p>Next: <a href="#p6"> Open Provider Mirrors. </a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p6">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Open Provider Mirrors</h4>
+            <p>If not already in place, having been done in the preparatory phase, then set up an open provider mirror as quickly as you can. This is a very popular option for NGOs and opposition and activist websites that come under DoS attack, as it can be very effective in getting a form of the site content back up and available at an arbitrary speed—the goal of the initial phase. Please refer to the description of the same name within the 'Part 1: Preparatory Phase' section of this document for further information on this type of site mirroring.</p>
+            <p>Next: <a href="#p7"> Distributed Content. </a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p7">
+        <div class="col-md-1"></div>        
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Distributed Content</h4>
+            <p>If set up in the preparatory phase, then activate this mechanism now and start sending your content to be hosted within portions of allied websites. If no arrangements for the provision of a publishing channel for your content has been made in advance, then a plea for other website owners to embed your content via an RSS feed or similar can be made while the DoS attack is underway.</p>
+            <p>Next: <a href="#p8"> Darknet. </a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p>    
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p8">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Darknet</h4>
+            <p>If set up in the preparatory phase, then activate this mechanism now. It may or may not work, depending on whether the attack software used by the attacker does DNS lookups for your web servers or not. </p>
+            <p>Next: <a href="#p9"> Forgoing the Domain. </a></p> 
+            <p>Jump to: <a href="#p10"> Restorative Phase.</a></p> 
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p9">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Forgoing the Domain</h4>
+            <p>This is a very drastic measure, and one likely to have only very short-term benefits in mitigating a DoS attack. This strategy relies on hosting your website either on IP addresses not associated with the website's normal domain name, or hosting it on an alternate domain name. There is likely only a short amount of time before the attacker realizes you have shifted your website and adds the new IP address/s or domain/s to their attack configuration. This gives you just a small window where your audience may be able to get to your content. The greatest challenge of this strategy is to find quick and creative ways to let your audience know where to find your content.</p>
+            <p>Next: <a href="#p10"> Restorative Phase.</a></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="p10">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+          <h4> Restorative Phase</h4>
+            <p>The aim of the restorative phase is to get the site available to the users again in its original form and capability. In this phase, the site may still be slow or a little sporadic, but the full content should now be available to the users.</p>
+            <p>Aready know about Restorative Phase? <a href="#15"> Jump to Long Term Phase.</a></p> 
+            <p>Wanna know more about Restorative Phase? <a href="#p11"> Go to Restorative Phase Strategies.</a></p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/13.jpg" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p11">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h4>Restorative Phase Strategies for Mitigating Denial of Service Attacks:</h4>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p12">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Hosting Location</h4>
+            <p>If the geographic hosting location of your website has proven to be the wrong choice to defend against DoS attacks, then you may have to move the site to another location. This move may be from a local provider to an overseas provider, or from an overseas provider to a local provider, depending on your current hosting situation, where the majority of your target audience is geographically located, and the political environment you operate within. Please refer to the Hosting Location section in 'Part 1: Preparatory Phase' within this document for further information.</p>
+            <p>Next: <a href="#p13"> Load Balanced Mirrors. </a></p> 
+            <p>Jump to: <a href="#p15"> Long Term Phase.</a></p> 
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p13">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Load Balanced Mirrors</h4>
+            <p>To get your site back in operation in a form more consistent with its usual look and capability, you may need to rush out a Load Balanced Mirror solution. Please refer to the Load Balanced Mirrors section in 'Part 1: Preparatory Phase' within this document for further information.</p>
+            <p>Next: <a href="#p14"> Big Bandwidth Mirrors. </a></p> 
+            <p>Jump to: <a href="#p15"> Long Term Phase.</a></p> 
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p14">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Big Bandwidth Mirrors</h4>
+            <p>If under a rate-based DoS attack, this is probably one of the quicker restorative solutions that can be implemented. Please refer to the Big Bandwidth Mirrors section in 'Part 1: Preparatory Phase' within this document for further information.</p>
+            <p>Next: <a href="#p15"> Long Term Phase.</a></p> 
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p15">
+        <div class="col-md-1"></div>        
+        <div class="col-md-8">
+          <h4>Long Term Phase</h4>
+            <p>The aim of the long term phase is to fully restore the performance of the full-featured website back to at least its original capability. By the end of this phase, the website will be able to stand up to whatever the attacker throws at the site, both in the immediate crisis and also into the future.</p>
+            <p>Go to: <a href="#p16"> Long Term Phase Strategies. </a></p>      
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/7.jpg" >
+        </div>        
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette" id="p16">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h4>Long Term Phase Strategies for Mitigating Denial of Service Attacks:</h4>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="p17">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/6.jpg" >
+        </div>
+        <div class="col-md-7">
+          <h4>Third Party Denial of Service Protection (DoSP)</h4>
+            <p>There is no question that the only truly robust solution to the full array of DoS and DDoS attacks is to obtain third party DoSP. At this time it can be expensive, but in order to remain online under any DoS attack, this is what it takes to ensure success. Therefore, the long term strategy to aim for is DoSP.</p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+        <p>Wanna know more about DDOS?<a href="responding.html"> Go to Hot tips. </a></p>
+        <p>Wanna to follow a flowchart for an examine? <a href="#"> Go to Response Process Flowchart.</a></p>
+        <p><a href="index.tml">Back to homepage</a></p>
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
+  
+<!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+  </body>
+</html>

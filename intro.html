@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
+    <title>DDOS Guide</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <style id="holderjs-style" type="text/css"></style>
+    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body style="">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">DDOS Guide</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">DDOS Guide</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="intro.html">Introduction</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="preparatory.html#p1">Hosting Location</a></li>
+                    <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
+                    <li><a href="preparatory.html#p5">Mirrors</a></li>
+                    <li><a href="preparatory.html#p8">Providers</a></li>
+                    <li><a href="preparatory.html#p9">Distributed Content</a></li>
+                    <li><a href="preparatory.html#p10">Darknets</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
+                    <li><a href="responding.html#p2">Initial Phase</a></li>
+                    <li><a href="responding.html#p10">Restorative Phase</a></li>
+                    <li><a href="responding.html#p15">Long Term Phase</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Response Process Flowchart</li>
+                    <li><a href="server.html">Server Side</a></li>
+                    <li><a href="network.html">Network</a></li>
+                    <li><a href="provider.html">Provider</a></li>
+                    <li><a href="hand.html">Hand</a></li>
+                  </ul>
+                </li>
+                <li><a href="hottips.html">Hot Tips</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>DDOS Attack Introduction</h1>
+        <p></p>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette" id="p1">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/2.jpg" >
+        </div>
+        <div class="col-md-6">
+          <p>Civil Society currently faces significant cyber threats. At the top of the list of those threats are Denial of Service (DoS) attacks. The websites of many organizations and individuals have already come under such attacks, and the frequency of those attacks are on the rise. Civil Society frequently does not have the kinds of resources or technical know-how that is available to commercial enterprise and government websites, and often have to exist in adverse political environments where every avenue available, both legal and illegal, is used against them. Therefore, the threat of DoS attacks is unlikely to go away any time soon.</p>
+          <p>A Denial of Service (DoS) attack is any attack that overwhelms a website, causing the content normally provided by that website to no longer be available to regular visitors of the website. Distributed Denial of Service (DDoS) attacks are traffic volume-based attacks originating from a large number of computers, which are usually compromised workstations. These workstations, known as 'zombies', form a widely distributed attack network called a 'botnet'. While many modern Denial of Service attacks are Distributed Denial of Service attacks, this is certainly not true for all denials of service experienced by websites. Therefore, when users first start experiencing difficulty in getting to the website content, it should not be assumed that the site is under a DDoS attack. Many forms of DoS are far easier to implement than DDoS, and so these attacks are still used by parties with malicious intent. Many such DoS attacks are easier to defend against once the mechanism used to cause the denial of service is known. Therefore, it is paramount to do proper analysis of attack traffic when a site becomes unable to perform its normal function. </p>
+          <p>There are two parts to this guide. The first part outlines preparatory steps that can be taken by Civil Society organizations to improve their website's resilience, should it come under attack. However, we do understand that most Civil Society organizations' first introduction to DoS attacks comes when they suddenly find themselves the victim of an attack. The second part of this guide provides a step-by-step process to assist the staff of NGOs to efficiently deal with that stressful situation. </p>
+          <br>
+            <p>Wanna know more about DDOS?<a href="preparatory.html"> Go to Preparatory Phase. </a></p>
+            <p>Wanna to follow a flowchart for an examine? <a href="#"> Go to Response Process Flowchart.</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
+  
+<!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+  </body>
+</html>
