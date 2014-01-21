@@ -1,150 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
-    <title>DDOS Guide</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
-    <style type="text/css"></style>
-    <style id="holderjs-style" type="text/css"></style>
-    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body style="">
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">DDOS Guide</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">DDOS Guide</a>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta charset="utf-8">
+                <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
+                <title>DDOS Guide</title>
+                
+                <!-- Bootstrap core CSS -->
+                <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+                    <!-- Custom styles for this template -->
+                    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+                        <!-- Bootstrap theme -->
+                        <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+                            <!-- Custom styles for this template -->
+                            <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+                                <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+                                    <style type="text/css"></style>
+                                    <style id="holderjs-style" type="text/css"></style>
+                                    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
+                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                                    <script type="text/javascript" src="js/bootstrap.js"></script>
+                                    </head>
+    <!-- NAVBAR
+     ================================================== -->
+    <body style="">
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">DDOS Guide</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">DDOS Guide</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="intro.html">Introduction</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="preparatory.html#p1">Hosting Location</a></li>
+                                        <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
+                                        <li><a href="preparatory.html#p5">Mirrors</a></li>
+                                        <li><a href="preparatory.html#p8">Providers</a></li>
+                                        <li><a href="preparatory.html#p9">Distributed Content</a></li>
+                                        <li><a href="preparatory.html#p10">Darknets</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active" class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
+                                        <li><a href="responding.html#p2">Initial Phase</a></li>
+                                        <li><a href="responding.html#p10">Restorative Phase</a></li>
+                                        <li><a href="responding.html#p15">Long Term Phase</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Response Process Flowchart</li>
+                                        <li><a href="server.html">Server Side</a></li>
+                                        <li><a href="network.html">Network</a></li>
+                                        <li><a href="provider.html">Provider</a></li>
+                                        <li><a href="hand.html">Hand</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="hottips.html">Hot Tips</a></li>
+                                <li><a href="conclusion.html">Conclusion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li ><a href="index.html">Home</a></li>
-                <li><a href="intro.html">Introduction</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="preparatory.html#p1">Hosting Location</a></li>
-                    <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
-                    <li><a href="preparatory.html#p5">Mirrors</a></li>
-                    <li><a href="preparatory.html#p8">Providers</a></li>
-                    <li><a href="preparatory.html#p9">Distributed Content</a></li>
-                    <li><a href="preparatory.html#p10">Darknets</a></li>
-                  </ul>
-                </li>
-                <li class="active" class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
-                    <li><a href="responding.html#p2">Initial Phase</a></li>
-                    <li><a href="responding.html#p10">Restorative Phase</a></li>
-                    <li><a href="responding.html#p15">Long Term Phase</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Response Process Flowchart</li>
-                    <li><a href="server.html">Server Side</a></li>
-                    <li><a href="network.html">Network</a></li>
-                    <li><a href="provider.html">Provider</a></li>
-                    <li><a href="hand.html">Hand</a></li>
-                  </ul>
-                </li>
-                <li><a href="hottips.html">Hot Tips</a></li>
-                <li><a href="conclusion.html">Conclusion</a></li>
-              </ul>
+        </div>
+        
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Check the Network Side</h1>
+        </div>
+        
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p1">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Check High Volume of Network traffic.</h4>
+                <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Yes? Check Large Number of Source IPs? »</a></p><br>
+                <p><a href="#p5" class="btn btn-primary btn-lg" role="button">No? Go to Problems Intermittent. »</a></p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Check the Server Side</h1>
-      </div>
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p1">
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/21.png" >
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p2">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Large Number of Source IPs?</h4>
+                <p><a href="#p3" class="btn btn-primary btn-lg" role="button">Yes? Go To DDoS, DRDoS, HTTP GET Flood, Peer-to-peer DoS »</a></p><br>
+                <p><a href="#p4" class="btn btn-primary btn-lg" role="button">No? Go to Asymmetric Resource Utilization Starvation Attacks. »</a></p>
+            </div>
         </div>
-        <div class="col-md-8">
-          <h4>Server Examine</h4>
-            <p>How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   </p>
-            <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Failed Hardware, Permanent DoS? Go »</a></p><br>
-            <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Fine? Go to Check if Server Dead. »</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> DDoS, DRDoS, HTTP GET Flood, Peer-to-peer DoS</h4>
+                <p>Some form of rate-based denial of service attack. This could be a Distributed Denial of Service attack using fraggle, a SYN Flood, HTTP GET Flood or similar; a Peer-to-peer DoS through a file sharing network using the ADC protocol or similar; or a Distributed Reflected Denial of Service attack, such as ICMP Echo Request / Smurf attacks or DNS amplification attacks, etc. Depending on the nature of the attack, defending against them can range from simply blocking the ports they use to more difficult measures (if the attack traffic is indistinguishable from legitimate traffic, for example).</p>
+            </div>
         </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p2">
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p4">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Asymmetric Resource Utilization Starvation Attacks</h4>
+                <p>Usually such an attack will be perpetrated using a very powerful or capable computer which has strengths that outperform the capability of your web server. The chosen capability could be network bandwidth, compute power, maximum number of concurrent connections, or some other resource.</p>
+            </div>
         </div>
-        <div class="col-md-7">
-           <h4> Failed Hardware, Permanent DoS</h4>
-              <p>Check hardware for normal component failures. Cables, hard drives, power supplies, RAM, motherboards, CPU, and network interfaces are all critical components that could cause your web server to go offline. Do be aware that some attacks known as 'Permanent DoS' exist which exploit vulnerabilities in hardware or firmware to 'brick' (irreparably destroy) hardware (usually by writing bogus programs to ROM chips on the hardware device). If you replace a failed hardware component with a new component that subsequently fails similarly to the old one, you may be experiencing a PDoS attack.</p>
-              <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Set Debug, Logging for Crash Analysis? Go »</a></p><br>
-              <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Fine? Go to Check Server Crashing. »</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p5">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Problems Intermittent</h4>
+                <p><a href="#p6" class="btn btn-primary btn-lg" role="button">Yes? Go To Degradation of Service Attacks»</a></p><br>
+                <p><a href="#p7" class="btn btn-primary btn-lg" role="button">Fine? Examine Network traffic protocols</a></p>
+            </div>
         </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p2">
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p6">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4>Degradation of Service Attacks</h4>
+                <p>A Degradation of Service attack is any DoS attack performed in intermittent bursts to frustrate any initial attempt to work out what is wrong with the website. Users experience difficulty getting to the website, but by the time they are able to communicate the problem to the website technical team, the attack has ceased, so when the techs look at the server, everything appears normal. This pattern continues until the techs begin to monitor the website at all times.</p>
+            </div>
         </div>
-        <div class="col-md-7">
-           <h4>International Hosting Location Strategy</h4>
-              <p>If you oppose the government or are highly critical of other sectors within your country, then it is probably not a good idea to host your website within the geographic borders of your country. Some political opposition groups have come under DDoS attack, and when they asked their service provider to assist in mitigating the attacks, they received no assistance whatsoever. It is believed the service providers were under pressure from the government to withhold any assistance to the website owners. It must also be noted that if the government has control of traffic at key points of the internet infrastructure within the borders of the nation, then it may be possible for them to outright block access to, divert traffic away from, or choke down the bandwidth to your website, creating a very effective denial of service to some visitors to your website (depending on what infrastructure the government has control of, where it is located, where your users are located, etc.).</p>
-              <p>Another issue to consider in relation to geographic location of your hosting provider is the question of legal jurisdiction. If you host your website within the nation or in a nation with very close ties to the government, you may provide them with an easy avenue to find or create laws to shut down your site. The solution to these issues is to host your website overseasinternationally, away from the infrastructu</p>
-              <p>Next: <a href="#p3"> Local Hosting Location Strategy.</a></p> 
-              <p>Jump to: <a href="#p4"> International Hosting Location Strategy.</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p7">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Examine Network traffic protocols</h4>
+                <p>ICMP attack?</p>
+                <p><a href="#p8" class="btn btn-primary btn-lg" role="button">Yes?  Go To ICMP/Ping Flood, Smurf, Nuke, Winnuke, Ping of Death »</a></p><br>
+                <p><a href="#p9" class="btn btn-primary btn-lg" role="button">Fine? Go to TCP/IP Attacks. »</a></p>
+            </div>
         </div>
-      </div>
-      <hr class="featurette-divider">
-      <!-- /END THE FEATURETTES -->
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p8">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4>ICMP/Ping Flood, Smurf, Nuke, Winnuke, Ping of Death</h4>
+                <p>Many ICMP attacks exist, and they form some of the oldest and most frequently used DoS attack methods. If ICMP is not important in your environment, then drop all ICMP traffic at your firewall.</p>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p9">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Check TCP/IP Attacks</h4>
+                <p><a href="#p10" class="btn btn-primary btn-lg" role="button">Yes? Go To SYN Flood, Teardrop, Low Rate DoS »</a></p><br>
+                <p><a href="#p11" class="btn btn-primary btn-lg" role="button">Fine? Go to Check Hungry Process. »</a></p>
+            </div>
+        </div>
 
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
-  
-<!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
-  </body>
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p10">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> SYN Flood, Teardrop, Low Rate DoS</h4>
+                <p>These are all TCP/IP protocol attacks. Most operating systems now have mechanisms to combat SYN Flood and Teardrop attacks, so ensure those mechanisms are compiled into your kernel. The Low Rate DoS attack exploits the TCP/IP protocol to convince your server to restrict throughput. Occasionally, new attacks that rely on poor implementations of the TCP/IP networking stack are brought to light. Patches will usually be issued by the stack developers reasonably quickly, but you may have to mitigate the attack as best you can in the meantime.</p>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p11">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Check Application Attacks</h4>
+                <p><a href="#p12" class="btn btn-primary btn-lg" role="button">Yes?  Go to Application Level DoS, Slowloris, Invite of Death, etc »</a></p><br>
+                <p><a href="provider.html" class="btn btn-primary btn-lg" role="button">Fine? Go to Check Provider side. »</a></p>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p12">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Application Level DoS, Slowloris, Invite of Death, etc </h4>
+                <p>Symptoms of Application Level DoS attacks often include, but are not limited to, system crashes and lockups, CPU and/or Memory at 100% utilization, or abuse of the application protocol. Application attacks may be hard to distinguish from legitimate traffic. For example, they could be complex SQL queries issued to a database backend which can result in high CPU, or database transaction blocks which may prevent other database writes and processes, subsequently resulting in crashing that may corrupt the database. Race conditions and thread starvation are also common mechanisms utilized in these attacks. Other specific examples of Application Level DoS attacks include HTTP POST DoS, Invite of Death, and Slowloris. Note that for Slowloris there may be a simple mitigation, such as moving your website to a Microsoft platform, as MS IIS is not susceptible to the attack. F5 load-balancing devices also mitigate this attack, so placing one on the network in front of your website would also work. Application attacks perpetrated across the network require the full TCP handshake, which means source IPs cannot be spoofed. You may be able to use this to your advantage by logging those source addresses, using some mechanism to add them to your firewall ruleset, and subsequently dropping all traffic originating from those addresses.</p>
+            </div>
+        </div>
+        
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        
+        
+        
+        
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+        
+        </div><!-- /.container -->
+        
+        
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
+        <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
+        <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
+        
+        <!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+    </body>
 </html>

@@ -1,150 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
-    <title>DDOS Guide</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
-    <style type="text/css"></style>
-    <style id="holderjs-style" type="text/css"></style>
-    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body style="">
-    <div class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">DDOS Guide</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">DDOS Guide</a>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta charset="utf-8">
+                <!--<link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">-->
+                <title>DDOS Guide</title>
+                
+                <!-- Bootstrap core CSS -->
+                <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+                    <!-- Custom styles for this template -->
+                    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+                        <!-- Bootstrap theme -->
+                        <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+                            <!-- Custom styles for this template -->
+                            <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+                                <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+                                    <style type="text/css"></style>
+                                    <style id="holderjs-style" type="text/css"></style>
+                                    <style type="text/css">object,embed{-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;-ms-animation-duration:.001s;-ms-animation-name:playerInserted;-o-animation-duration:.001s;-o-animation-name:playerInserted;animation-duration:.001s;animation-name:playerInserted;}@-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style>
+                                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                                    <script type="text/javascript" src="js/bootstrap.js"></script>
+                                    </head>
+    <!-- NAVBAR
+     ================================================== -->
+    <body style="">
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">DDOS Guide</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">DDOS Guide</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="intro.html">Introduction</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="preparatory.html#p1">Hosting Location</a></li>
+                                        <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
+                                        <li><a href="preparatory.html#p5">Mirrors</a></li>
+                                        <li><a href="preparatory.html#p8">Providers</a></li>
+                                        <li><a href="preparatory.html#p9">Distributed Content</a></li>
+                                        <li><a href="preparatory.html#p10">Darknets</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active" class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
+                                        <li><a href="responding.html#p2">Initial Phase</a></li>
+                                        <li><a href="responding.html#p10">Restorative Phase</a></li>
+                                        <li><a href="responding.html#p15">Long Term Phase</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Response Process Flowchart</li>
+                                        <li><a href="server.html">Server Side</a></li>
+                                        <li><a href="network.html">Network</a></li>
+                                        <li><a href="provider.html">Provider</a></li>
+                                        <li><a href="hand.html">Hand</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="hottips.html">Hot Tips</a></li>
+                                <li><a href="conclusion.html">Conclusion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li ><a href="index.html">Home</a></li>
-                <li><a href="intro.html">Introduction</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Preparatory Phase<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="preparatory.html#p1">Hosting Location</a></li>
-                    <li><a href="preparatory.html#p4">Third Party DOS Protection</a></li>
-                    <li><a href="preparatory.html#p5">Mirrors</a></li>
-                    <li><a href="preparatory.html#p8">Providers</a></li>
-                    <li><a href="preparatory.html#p9">Distributed Content</a></li>
-                    <li><a href="preparatory.html#p10">Darknets</a></li>
-                  </ul>
-                </li>
-                <li class="active" class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Responding to a DoS Attack<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="responding.html#p1">DOS Attack Mitigation</a></li>
-                    <li><a href="responding.html#p2">Initial Phase</a></li>
-                    <li><a href="responding.html#p10">Restorative Phase</a></li>
-                    <li><a href="responding.html#p15">Long Term Phase</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Response Process Flowchart</li>
-                    <li><a href="server.html">Server Side</a></li>
-                    <li><a href="network.html">Network</a></li>
-                    <li><a href="provider.html">Provider</a></li>
-                    <li><a href="hand.html">Hand</a></li>
-                  </ul>
-                </li>
-                <li><a href="hottips.html">Hot Tips</a></li>
-                <li><a href="conclusion.html">Conclusion</a></li>
-              </ul>
+        </div>
+        
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Check the Provider Side</h1>
+        </div>
+        
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p1">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Contact Provider</h4>
+                <p><a href="#p2" class="btn btn-primary btn-lg" role="button"> Then »</a></p><br>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Check the Server Side</h1>
-      </div>
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p1">
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/21.png" >
+        
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p2">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Are they aware of an Attack?</h4>
+                <p><a href="#p3" class="btn btn-primary btn-lg" role="button"> Then »</a></p><br>
+            </div>
         </div>
-        <div class="col-md-8">
-          <h4>Server Examine</h4>
-            <p>How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   How to do server examine Here   </p>
-            <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Failed Hardware, Permanent DoS? Go »</a></p><br>
-            <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Fine? Go to Check if Server Dead. »</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p3">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> What action/s have they taken? </h4>
+                <p><a href="#p4" class="btn btn-primary btn-lg" role="button"> Then»</a></p><br>
+            </div>
         </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p2">
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p4">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4>Are they able to take futher action?</h4>
+                <p><a href="#p2" class="btn btn-primary btn-lg" role="button"> Then»</a></p><br>
+            </div>
         </div>
-        <div class="col-md-7">
-           <h4> Failed Hardware, Permanent DoS</h4>
-              <p>Check hardware for normal component failures. Cables, hard drives, power supplies, RAM, motherboards, CPU, and network interfaces are all critical components that could cause your web server to go offline. Do be aware that some attacks known as 'Permanent DoS' exist which exploit vulnerabilities in hardware or firmware to 'brick' (irreparably destroy) hardware (usually by writing bogus programs to ROM chips on the hardware device). If you replace a failed hardware component with a new component that subsequently fails similarly to the old one, you may be experiencing a PDoS attack.</p>
-              <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Set Debug, Logging for Crash Analysis? Go »</a></p><br>
-              <p><a href="#p2" class="btn btn-primary btn-lg" role="button">Fine? Go to Check Server Crashing. »</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p5">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Have their actions been effective?</h4>
+                <p><a href="#p6" class="btn btn-primary btn-lg" role="button"> Then »</a></p><br>
+            </div>
         </div>
-      </div>
-      <hr class="featurette-divider">
-      <div class="row featurette" id="p2">
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-          <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p6">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Are the Provider's Provider able to assist?</h4>
+                <p><a href="#p7" class="btn btn-primary btn-lg" role="button"> Then »</a></p><br>
+            </div>
         </div>
-        <div class="col-md-7">
-           <h4>International Hosting Location Strategy</h4>
-              <p>If you oppose the government or are highly critical of other sectors within your country, then it is probably not a good idea to host your website within the geographic borders of your country. Some political opposition groups have come under DDoS attack, and when they asked their service provider to assist in mitigating the attacks, they received no assistance whatsoever. It is believed the service providers were under pressure from the government to withhold any assistance to the website owners. It must also be noted that if the government has control of traffic at key points of the internet infrastructure within the borders of the nation, then it may be possible for them to outright block access to, divert traffic away from, or choke down the bandwidth to your website, creating a very effective denial of service to some visitors to your website (depending on what infrastructure the government has control of, where it is located, where your users are located, etc.).</p>
-              <p>Another issue to consider in relation to geographic location of your hosting provider is the question of legal jurisdiction. If you host your website within the nation or in a nation with very close ties to the government, you may provide them with an easy avenue to find or create laws to shut down your site. The solution to these issues is to host your website overseasinternationally, away from the infrastructu</p>
-              <p>Next: <a href="#p3"> Local Hosting Location Strategy.</a></p> 
-              <p>Jump to: <a href="#p4"> International Hosting Location Strategy.</a></p>
+        
+        <hr class="featurette-divider">
+        <div class="row featurette" id="p7">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img class="img-circle" alt="host picture" style="width: 250px; height: 250px;" src="image/22.jpg" >
+                    </div>
+            <div class="col-md-7">
+                <h4> Have their actions been effective?</h4>
+                <p><a href="hand.html" class="btn btn-primary btn-lg" role="button"> Then go to the Hand side»</a></p><br>
+            </div>
         </div>
-      </div>
-      <hr class="featurette-divider">
-      <!-- /END THE FEATURETTES -->
-
-
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
-  
-<!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
-  </body>
+ 
+        
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+        
+        
+        
+        
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+        
+        </div><!-- /.container -->
+        
+        
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./Carousel Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
+        <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
+        <script src="./Carousel Template for Bootstrap_files/holder.js"></script>
+        
+        <!-- sourse from url=(0042)http://getbootstrap.com/examples/carousel/ -->
+    </body>
 </html>
